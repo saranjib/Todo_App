@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: auto-demo
+  namespace: namespace-workflow-1729305561575
+  labels:
+    kubernetes.azure.com/generator: devhub
+spec:
+  type: LoadBalancer
+  selector:
+    app: auto-demo
+  ports:
+    - protocol: TCP
+      port: 8000
+      targetPort: 8000
