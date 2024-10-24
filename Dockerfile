@@ -1,4 +1,5 @@
 FROM python:3.11-slim
+RUN install django:5.1
 ENV PORT 8000
 EXPOSE 8000
 WORKDIR /app
